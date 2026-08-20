@@ -1,15 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Catálogo</title>
 </head>
+
 <body>
 
-    <h1>Sistema de Catálogo</h1>
+    <!-- TOPO DO SISTEMA -->
+    <table width="100%">
 
+        <tr>
+
+            <!-- TÍTULO -->
+            <td>
+                <h1>Sistema de Catálogo</h1>
+            </td>
+
+            <!-- PERFIL -->
+            <td align="right">
+
+                <table cellpadding="5">
+
+                    <tr>
+
+                        <td>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
+                                width="60" alt="Foto de perfil do usuário">
+                        </td>
+
+                        <td>
+                            <b>Nome do Usuário</b>
+                        </td>
+
+                    </tr>
+
+                </table>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+
+    <!-- NAVEGAÇÃO -->
     <nav>
+
         <a href="telas_principais/home.html" target="conteudo">Início</a>
         |
         <a href="telas_principais/catalogo.html" target="conteudo">Catálogo</a>
@@ -17,17 +56,16 @@
         <a href="telas_principais/sobre.html" target="conteudo">Sobre</a>
         |
         <a href="login/login.html">Logout</a>
+
     </nav>
 
     <hr>
 
-    <iframe
-        src="telas_principais/home.html"
-        name="conteudo"
-        width="99.8%"
-        height="1920x1080"
-        title="Área de Conteúdo">
+
+    <!-- CONTEÚDO -->
+    <iframe src="telas_principais/home.html" name="conteudo" width="99.8%" height="1920" title="Área de Conteúdo">
     </iframe>
 
 </body>
+
 </html>
