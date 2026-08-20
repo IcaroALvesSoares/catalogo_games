@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <h1>Cadastro de Usuário</h1>
+
+    <fieldset>
+        <legend>Dados do usuário</legend>
+
+        <form action="cadastro-sucesso.html">
+
+            <p>
+                <label for="idnome">Nome:</label><br>
+                <input
+                    type="text"
+                    name="nome"
+                    id="idnome"
+                    placeholder="Nome completo"
+                    minlength="2"
+                    maxlength="50"
+                    required
+                >
+            </p>
+
+            <p>
+                <label for="idemail">E-mail:</label><br>
+                <input
+                    type="email"
+                    name="email"
+                    id="idemail"
+                    placeholder="seuemail@email.com"
+                    required
+                >
+            </p>
+
+            <p>
+                <label for="idsenha">Senha:</label><br>
+                <input
+                    type="password"
+                    name="senha"
+                    id="idsenha"
+                    required
+                >
+            </p>
+
+            <p>
+                <label for="ididade">Idade:</label><br>
+                <input
+                    type="number"
+                    name="idade"
+                    id="ididade"
+                    min="1"
+                    max="120"
+                >
+            </p>
+
+            <p>
+                <label for="idtema">Tema de interesse:</label><br>
+
+                <select name="tema" id="idtema">
+                    <option value="" selected disabled>
+                        Selecione um tema
+                    </option>
+
+                    <option value="filmes">Filmes</option>
+                    <option value="jogos">Jogos</option>
+                    <option value="livros">Livros</option>
+                    <option value="plantas">Plantas</option>
+                    <option value="animais">Animais</option>
+                </select>
+            </p>
+
+            <p>
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="Limpar">
+            </p>
+
+        </form>
+    </fieldset>
+
+    <p>
+        <a href="login.html">Voltar para o login</a>
+    </p>
+
+</body>
+</html>
